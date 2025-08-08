@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "ms-python.python",               // Core Python extension
+    "ms-python.vscode-pylance",       // IntelliSense + type checking
+    "charliermarsh.ruff",              // Ruff linting/formatting
+    "ms-python.debugpy",              // Python debugging backend
+    "github.vscode-pull-request-github", // GitHub PR management
+    "eamodio.gitlens",                 // Git insights & history
+    "ms-azuretools.vscode-docker"      // (Optional) Docker integration for deployment
+  ],
+  "unwantedRecommendations": [
+    "ms-python.black-formatter",      // We use Ruff for formatting instead
+    "ms-python.autopep8"               // Avoid conflicting formatters
+  ]
+}
+
