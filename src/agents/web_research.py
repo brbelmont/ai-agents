@@ -124,9 +124,13 @@ def build_graph():
     return g.compile()
 
 
-if __name__ == "__main__":
+def main():
     graph = build_graph()
     q = "What are 5 ChatGPT prompt engineering best practices?"
     out = graph.invoke({"question": f"{q}"})
     print(f"Question: {q}\n\n")
     print(out["final_answer"])
+
+
+if __name__ == "__main__":
+    main()
